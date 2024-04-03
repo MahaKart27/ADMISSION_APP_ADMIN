@@ -9,7 +9,7 @@ def connect_db():
     conn = psycopg2.connect(
         dbname='postgres',  # Update with your actual database name
         user='postgres',    # Replace with your actual database username
-        password='2004',    # Replace with your actual database password
+        password='12345',    # Replace with your actual database password
         host='localhost',
         port='5432'
     )
