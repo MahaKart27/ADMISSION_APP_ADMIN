@@ -5,7 +5,7 @@ import './App.css';
 import { FaSearch } from 'react-icons/fa'; // Importing the search icon from react-icons/fa
 
 // Sample student data
-const studentsData = [
+var studentsData = [
   {
     "id": 1,
     "name": "John Doe",
@@ -34,6 +34,17 @@ const studentsData = [
     "sop": "Proin sed lorem in ligula sodales interdum nec et mauris. Vivamus nec arcu sed enim interdum suscipit."
   }
 ];
+
+var requestOptions = {
+  method: 'GET',
+  redirect: 'follow'
+};
+
+fetch("http://127.0.0.1:5000/api/students", requestOptions)
+  .then(response => response.text())
+  .then(result => studentsData=result)
+  .catch(error => console.log('error', error));
+
 
 const App = () => {
   return (

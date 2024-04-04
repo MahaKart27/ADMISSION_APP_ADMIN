@@ -74,9 +74,9 @@ const StudentDetails = ({ students }) => {
         <ul>
           <li>ID: {student.id}</li>
           <li>Name: {student.name}</li>
-          <li>Father's name: {student.fathername}</li>
+          <li>Father's name: {student.fathers_name}</li>
           <li>Email: {student.email}</li>
-          <li>Phone Number: {student.phonenumber}</li>
+          <li>Phone Number: {student.phone_number}</li>
           <li>Age: {student.age}</li>
         </ul>
       </div>
